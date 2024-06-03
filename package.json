@@ -17,7 +17,7 @@
   },
   "type": "module",
   "publishConfig": {
-    "@LeMouf:registry=https://npm.pkg.github.com"
+    "@LeMouf:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@abraham/reflection": "^0.12.0",
