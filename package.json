@@ -1,5 +1,5 @@
 {
-  "name": "@LeMouf/package-svelte-csf",
+  "name": "@lemouf/package-svelte-csf",
   "version": "0.0.1",
   "description": "Components shared including addon-svelte-csf",
   "main": "./src/index.js",
@@ -17,7 +17,7 @@
   },
   "type": "module",
   "publishConfig": {
-    "@LeMouf:registry": "https://npm.pkg.github.com"
+    "@lemouf:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@abraham/reflection": "^0.12.0",
