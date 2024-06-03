@@ -1,5 +1,7 @@
 <script lang="ts">
-	import './ButtonSvelte.css';
+	import './buttonSvelte.css';
+
+  export let testId = "buttonSvelte"
 
   /**
    * Is this the principal call to action on the page?
@@ -26,6 +28,7 @@
 
 <button
   type="button"
+  data-testid={testId}
   class={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
   {style}
   on:click

@@ -1,6 +1,8 @@
 <script lang="ts">
   import './button.css';
 
+  export let testId = "button"
+
   /**
    * Is this the principal call to action on the page?
    */
@@ -26,6 +28,7 @@
 
 <button
   type="button"
+  data-testid={testId}
   class={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
   {style}
   on:click
