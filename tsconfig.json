@@ -1,0 +1,58 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "resolveJsonModule": true,
+    /**
+     * Typecheck JS in `.svelte` and `.js` files by default.
+     * Disable checkJs if you'd like to use dynamic types in JS.
+     * Note that setting allowJs false does not prevent the use
+     * of JS in `.svelte` files.
+     */
+    "allowJs": true,
+    "checkJs": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+
+    "module": "ESNext",
+    "moduleResolution":"node",
+
+    // Enables experimental support for emitting type metadata for decorators which works with the module
+    // @abraham/relfection (better replacement of the reflect-metadata module). This compiler option is required by
+    // the Inversifyjs IoC container.
+    // See https://github.com/abraham/reflection
+    // See https://github.com/rbuckton/reflect-metadata
+    // See https://github.com/inversify/InversifyJS/blob/master/README.md#-installation
+    // See https://www.typescriptlang.org/tsconfig#emitDecoratorMetadata
+    "emitDecoratorMetadata": true,
+
+    // Enables the experimental support for decorators. This compiler option is required by the Inversifyjs IoC
+    // container.
+    // See https://www.typescriptlang.org/tsconfig#experimentalDecorators
+    "experimentalDecorators": true,
+
+    "types": ["vitest/globals"],
+  },
+
+  "include": [
+    "**/*.cjs",
+    "**/*.d.ts",
+    "**/*.js",
+    "**/*.ts",
+    "./src/**/*.svg",
+    "./src/**/*.svelte"
+  ],
+
+  "exclude": [
+      "./dist/**",
+      "./.storybook/**",
+      "./test/**",
+      "./public/**"
+  ],
+}
