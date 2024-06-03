@@ -14,9 +14,8 @@
     "build-storybook": "storybook build"
   },
   "type": "module",
-  "repository": {
-    "type": "git",
-    "url": ""
+  "publishConfig": {
+    "@LeMouf:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.1.5",
