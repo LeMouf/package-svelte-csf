@@ -1,5 +1,5 @@
 {
-  "name": "@package-svelte-csf",
+  "name": "@LeMouf/package-svelte-csf",
   "version": "0.0.1",
   "description": "Components shared including addon-svelte-csf",
   "main": "./src/index.js",
