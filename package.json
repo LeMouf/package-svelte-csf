@@ -15,7 +15,7 @@
   },
   "type": "module",
   "publishConfig": {
-    "@LeMouf:registry": "https://npm.pkg.github.com"
+    "@LeMouf:package-svelte-csf": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.1.5",
